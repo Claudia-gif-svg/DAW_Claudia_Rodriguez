@@ -6,3 +6,7 @@
   --color-texto: #333333;       /* Texto oscuro */
   --color-fondo: #F9F9F9;       /* Fondo general */
 }
+body {
+  background: linear-gradient(135deg, #A8DADC, #F1FAEE);
+ 
+}
