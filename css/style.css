@@ -1,0 +1,8 @@
+:root {
+  --color-principal: #A8DADC;   /* Verde agua pastel */
+  --color-secundario: #F1FAEE;  /* Blanco pastel */
+  --color-terciario: #FFE5D9;   /* Salmón pastel */
+  --color-acento: #FFD6A5;      /* Naranja pastel */
+  --color-texto: #333333;       /* Texto oscuro */
+  --color-fondo: #F9F9F9;       /* Fondo general */
+}
