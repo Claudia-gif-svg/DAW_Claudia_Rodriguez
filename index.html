@@ -1,16 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto DAW</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="stylesheet" href="./css/menu.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/footer.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto DAW</title>
+  <!-- Enlazamos los archivos CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="./css/menu.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
-    
+
+  <!-- Sección principal del formulario -->
+  <section class="formulario-container">
+    <article class="formulario-container__article">
+
+      <!-- Título del formulario -->
+      <h2 class="formulario-container__titulo">
+        Formulario de inscripción general
+      </h2>
+
+      <!-- Descripción  del formulario -->
+      <p class="formulario-container__descripcion">
+        Rellena este formulario para conocer todas las opciones del Grado Superior de DAW.
+      </p>
+
+      <!-- Formulario de inscripción -->
+      <form class="formulario-container__form" action="./pages/inicio.html">
+
+        <!-- Campo para el nombre completo -->
+        <label class="formulario-container__label">Nombre Completo:</label>
+        <div class="formulario-container__input-group">
+          <input class="formulario-container__input" type="text" name="nombre" placeholder="Nombre" required>
+          <input class="formulario-container__input" type="text" name="apellido" placeholder="Primer Apellido" required>
+          <input class="formulario-container__input" type="text" name="apellido2" placeholder="Segundo Apellido" required>
+        </div>
+
+        <!-- Campo para el correo electrónico -->
+        <label class="formulario-container__label">Correo Electrónico:</label>
+        <input class="formulario-container__input" type="email" name="correo" placeholder="Correo Electrónico" required>
+
+        <!-- Campo para el teléfono -->
+        <label class="formulario-container__label">Teléfono:</label>
+        <input class="formulario-container__input" type="tel" name="telefono" placeholder="Teléfono" required>
+
+        <!-- Aceptación de términos y condiciones -->
+        <div class="formulario-container__terms">
+          <input class="formulario-container__checkbox" type="checkbox" name="terminos" required>
+          <span class="formulario-container__terms-text">Acepto los términos y condiciones</span>
+        </div>
+
+        <!-- Botón de envío -->
+        <button class="formulario-container__button" type="submit">Enviar</button>
+
+      </form>
+    </article>
+  </section>
+
 </body>
 </html>
