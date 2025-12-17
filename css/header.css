@@ -80,6 +80,16 @@ nav {
   font-size: 1rem;
   text-align: center;
 }
+/* Efecto hover para los enlaces del nav */
+.nav__link:hover {
+  color: var(--color-texto);   /* Cambia el color del texto a rosa pastel */
+  background-color: var(--color-secundario); /* Fondo verde menta pastel */
+  border-radius: 5px;              /* Bordes redondeados */
+  transition: all 0.3s ease;       /* Transición suave */
+  padding: 0.25rem 0.5rem;         
+  transform: scale(1.05);          /* Pequeño zoom al pasar el ratón */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Sombra ligera */
+}
 
 /* Animación menú */
 @keyframes navMenu {
