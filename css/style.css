@@ -19,115 +19,34 @@
   src: url("../assets/fonts/Nunito-Regular.ttf");
 }
 
-#fuentepersonalizada,
+#fuentepersonalizada{
+    font-family: "Nunito-Regular";
+
+}
 body {
   font-family: 'Nunito-Regular', sans-serif;
-}
-
-body {
-  background: linear-gradient(135deg, #A8DADC, #F1FAEE);
+    background: linear-gradient(135deg, #A8DADC, #F1FAEE);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
-/* Contenedor principal del formulario */
-.formulario-container {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 40px;
-  background-color: var(--color-fondo);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.container{
+background: linear-gradient(135deg, #A8DADC, #F1FAEE);
+min-width: 600px;
+max-width: 1200px;
+width:100%;
+display:grid;
+grid-template-columns: 1fr;
+grid-template-areas: 
+"header";
 }
-
-/* Artículo dentro del formulario */
-.formulario-container__article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.header{
+  grid-area: header;
 }
-
-/* Título y descripción */
-.formulario-container__titulo {
-  color: var(--color-principal);
-  margin-top: 20px;
-  font-size: 25px;
-  text-align: center;
+.header__logo-container{
+    display:none;
 }
-
-.formulario-container__descripcion {
-  color: var(--color-texto);
-  font-size: 15px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* Etiquetas e inputs */
-.formulario-container__label {
-  display: block;
-  margin-left: 10px;
-  margin-top: 15px;
-  margin-bottom: 5px;
-  color: var(--color-texto);
-  font-size: 16px;
-}
-
-.formulario-container__input {
-  width: 95%;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 2px solid var(--color-principal);
-  border-radius: 5px;
-  font-size: 16px;
-  color: var(--color-texto);
-  background-color: #fff;
-}
-
-.formulario-container__input:focus {
-  border: 2px solid var(--color-principal);
-  outline: none;
-}
-
-/* Formulario */
-.formulario-container__form {
-  width: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: var(--color-fondo);
-  border: 3px solid var(--color-principal);
-  border-radius: 5px;
-  padding: 20px;
-}
-
-/* Casilla de términos */
-.formulario-container__terms {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-  font-size: 14px;
-  color: var(--color-texto);
-  margin-left: 10px;
-}
-
-/* Botón de envío */
-.formulario-container__button {
-  width: 50%;
-  padding: 10px;
-  margin: 10px auto 20px auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--color-principal);
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-.formulario-container__button:hover {
-  background-color: var(--color-secundario);
-  color: var(--color-texto);
+.header__user-container{
+    display:none;
 }

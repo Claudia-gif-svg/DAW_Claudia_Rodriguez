@@ -1,0 +1,99 @@
+:root {
+  --color-principal: #C3AED6;   /* Lila pastel */
+  --color-secundario: #E2F0CB;  /* Verde menta pastel */
+  --color-terciario: #FFD6E0;   /* Rosa pastel */
+  --color-acento: #FFECB3;      /* Amarillo pastel */
+  --color-texto: #333333;       /* Texto oscuro */
+  --color-fondo: #F9F9F9;       /* Fondo general */
+}
+
+/* Header general */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0.75rem 1rem;
+  background: var(--color-fondo);
+  box-shadow: 0 2px 8px rgba(30, 41, 59, 0.07);
+  z-index: 1000;
+}
+
+.header__container {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+}
+
+/*Botón del menu */
+.nav__toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--color-principal);
+  margin-right: 1rem;
+}
+
+/* Navegación*/
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 120%;
+  align-items: center;
+  gap: 0;
+  background: var(--color-fondo);
+  padding: 0;
+  animation-name: navMenu;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+}
+
+.nav--open {
+  display: flex;
+  opacity: 1;
+}
+
+.nav__item {
+  list-style: none;
+  width: 90px;
+}
+
+.nav__link {
+  display: block;
+  color: var(--color-principal);
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Animación menú */
+@keyframes navMenu {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+

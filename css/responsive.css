@@ -1,0 +1,80 @@
+:root {
+    --color-principal: #C3AED6;
+    /* Lila pastel */
+    --color-secundario: #E2F0CB;
+    /* Verde menta pastel */
+    --color-terciario: #FFD6E0;
+    /* Rosa pastel */
+    --color-acento: #FFECB3;
+    /* Amarillo pastel */
+    --color-texto: #333333;
+    /* Texto oscuro */
+    --color-fondo: #F9F9F9;
+    /* Fondo general */
+}
+
+@media (min-width:600px) {
+    .header__logo-container {
+        display: flex;
+    }
+
+    .header__logo {
+        width: 80px;
+    }
+}
+
+@media(min-width:800px) {
+    .header__container {
+        display: flex;
+        justify-content: space-between;/* logo izquierda, usuario derecha */
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .nav__toggle {
+        display: none;/* ocultamos hamburguesa */
+    }
+
+    .nav {
+        display: flex !important;
+        /* fila */
+        flex-direction: row !important;
+        margin: 0 auto !important;
+        justify-content: center;
+        width: 60% !important;
+        position: static !important;
+        opacity: 1;
+        background: transparent;
+        box-shadow: none;
+        gap: 50px;
+        /* espacio entre los enlaces */
+    }
+
+    nav {
+        border: 1px solid var(--color-principal);
+        /* borde lila pastel */
+        border-radius: 8px;
+        /* bordes redondeados */
+        box-shadow: 0 4px 8px rgba(195, 174, 214, 0.3);
+        /* sombra lila suave */
+        margin: 0 auto;
+        width: 50% !important;
+        padding: 0.5rem 0;
+    }
+
+    .nav__item {
+        list-style: none;
+        /* quitar puntos */
+    }
+
+
+}
+
+@media (min-width:1024px) {
+    .header__user-container {
+        display: flex;
+    }
+}
