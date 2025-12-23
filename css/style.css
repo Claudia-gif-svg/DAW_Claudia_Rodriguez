@@ -23,7 +23,7 @@
     font-family: "Nunito-Regular";
 
 }
-body {
+.body {
   font-family: 'Nunito-Regular', sans-serif;
     background: linear-gradient(135deg, #A8DADC, #F1FAEE);
   background-repeat: no-repeat;
@@ -32,14 +32,14 @@ body {
 }
 
 .container{
-background: linear-gradient(135deg, #A8DADC, #F1FAEE);
 min-width: 600px;
 max-width: 1200px;
 width:100%;
 display:grid;
 grid-template-columns: 1fr;
 grid-template-areas: 
-"header";
+"header"
+"footer";
 }
 .header{
   grid-area: header;
@@ -49,4 +49,7 @@ grid-template-areas:
 }
 .header__user-container{
     display:none;
+}
+.footer{
+  grid-area:footer;
 }
