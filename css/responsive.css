@@ -21,12 +21,28 @@
     .header__logo {
         width: 80px;
     }
+
+    .intro__image {
+        display: flex;
+        justify-content: center;
+        /* centro horizontal */
+        align-items: center;
+        /* centro vertical */
+        margin-top: 10px;
+    }
+
+    .intro__img {
+        width: 250px;
+        display: flex;
+    }
+
 }
 
 @media(min-width:800px) {
     .header__container {
         display: flex;
-        justify-content: space-between;/* logo izquierda, usuario derecha */
+        justify-content: space-between;
+        /* logo izquierda, usuario derecha */
         align-items: center;
         width: 100%;
         max-width: 1200px;
@@ -35,7 +51,8 @@
     }
 
     .nav__toggle {
-        display: none;/* ocultamos hamburguesa */
+        display: none;
+        /* ocultamos hamburguesa */
     }
 
     .nav {
@@ -69,7 +86,7 @@
         list-style: none;
         /* quitar puntos */
     }
-   
+
 
 }
 
@@ -77,6 +94,55 @@
     .header__user-container {
         display: flex;
     }
+    .intro-content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 300px;
+        margin-top:10px;
+    }
+
+    .intro-text {
+        width: 500px;
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    .intro__description {
+        margin-left: 10px;
+    }
+
+    .intro__image {
+        width: 50%;
+
+    }
+
+    .intro__img {
+        width: 400px;
+        display: flex;
+
+    }
+
+    .metodologia {
+        width: 950px;
+        margin-top: 10px;
+        margin-left: 300px;
+    }
+    .metodologia__container {
+        flex-direction: row;
+        /* Aquí se ponen en fila*/
+        justify-content: space-around;
+    }
+}
+
+@media (min-width:1200px) {
+    .grid-general{
+        margin-left:300px;
+    }
+     .grid-general__container {
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas alineadas */
+  }
 
   
 }
