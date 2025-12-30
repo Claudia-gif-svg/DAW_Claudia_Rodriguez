@@ -30,7 +30,7 @@
 }
 @media (min-width: 1024px) {
   .footer__section {
-    flex-direction: row; /* Desktop: fila */
+    flex-direction: row;
     justify-content: space-around; 
     align-items: flex-start;
   }

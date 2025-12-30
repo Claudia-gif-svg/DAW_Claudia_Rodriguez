@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--Rutas de Font Awesome-->
+  <!--Rutas de Font Awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
   <!--Rutas css-->
@@ -19,93 +19,197 @@
 
 <body class="body">
 
- <header class="header">
-  <section class="header__container">
+  <header class="header">
+    <section class="header__container">
 
-    <!-- Logo -->
-    <div class="header__logo-container">
-      <img src="../assets/images/logo_inicial.png" class="header__logo" alt="Logo">
-    </div>
+      <!-- Logo -->
+      <div class="header__logo-container">
+        <img src="../assets/images/logo_inicial.png" class="header__logo" alt="Logo">
+      </div>
 
-    <!-- Navegación -->
-    <nav>
-      <button class="nav__toggle" id="nav__toggle">
-        <i class="fa-solid fa-bars"></i>
-      </button>
+      <!-- Navegación -->
+      <nav>
+        <button class="nav__toggle" id="nav__toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
 
-      <ul class="nav" id="nav">
-        <li class="nav__item"><a href="./inicio.html" class="nav__link" target="_blank">Inicio</a></li>
-        <li class="nav__item"><a href="./lenguajes.html" class="nav__link" target="_blank">Lenguajes</a></li>
-        <li class="nav__item"><a href="./cursos.html" class="nav__link" target="_blank">Cursos</a></li>
-      </ul>
-    </nav>
+        <ul class="nav" id="nav">
+          <li class="nav__item"><a href="./inicio.html" class="nav__link" target="_blank">Inicio</a></li>
+          <li class="nav__item"><a href="./lenguajes.html" class="nav__link" target="_blank">Lenguajes</a></li>
+          <li class="nav__item"><a href="./cursos.html" class="nav__link" target="_blank">Cursos</a></li>
+        </ul>
+      </nav>
 
-    <!-- Usuario -->
-    <div class="header__user-container">
-      <a href="../index.html" class="header__user" target="_blank"><i class="fa-regular fa-user"></i></a>
-    </div>
+      <!-- Usuario -->
+      <div class="header__user-container">
+        <a href="../index.html" class="header__user" target="_blank"><i class="fa-regular fa-user"></i></a>
+      </div>
 
-  </section>
-</header>
+    </section>
+  </header>
 
 
- 
-<div class="container">
-  <section class="daw-grid">
-  <h2 class="daw-grid__titulo">¿Qué aprenderás en DAW?</h2>
 
-  <div class="daw-grid__contenedor">
-    <article class="daw-grid__item">HTML & CSS</article>
-    <article class="daw-grid__item">JavaScript</article>
-    <article class="daw-grid__item">PHP</article>
-    <article class="daw-grid__item">Java</article>
-    <article class="daw-grid__item">React</article>
-    <article class="daw-grid__item">Bases de datos</article>
+  <div class="container">
+    <main>
+      <section class="languages">
+        <!--Tabla de lenguajes de programación-->
+        <table class="languages__table">
+          <thead class="languages__head">
+            <tr class="languages__row languages__row--head">
+              <th class="languages__cell languages__cell--head">Lenguaje de programación</th>
+              <th class="languages__cell languages__cell--head">Tipo</th>
+              <th class="languages__cell languages__cell--head">Nivel</th>
+              <th class="languages__cell languages__cell--head">Uso principal</th>
+            </tr>
+          </thead>
+
+          <tbody class="languages__body">
+            <tr class="languages__row">
+              <td class="languages__cell">PHP</td>
+              <td class="languages__cell">Backend</td>
+              <td class="languages__cell">Medio</td>
+              <td class="languages__cell">Web dinámica</td>
+            </tr>
+
+            <tr class="languages__row languages__row--mod">
+              <td class="languages__cell">JavaScript</td>
+              <td class="languages__cell">Frontend</td>
+              <td class="languages__cell">Medio</td>
+              <td class="languages__cell">Interactividad</td>
+            </tr>
+
+            <tr class="languages__row">
+              <td class="languages__cell">Java</td>
+              <td class="languages__cell">Backend</td>
+              <td class="languages__cell">Medio</td>
+              <td class="languages__cell">Aplicaciones</td>
+            </tr>
+
+            <tr class="languages__row languages__row--mod">
+              <td class="languages__cell">React</td>
+              <td class="languages__cell">Frontend</td>
+              <td class="languages__cell">Avanzado</td>
+              <td class="languages__cell">SPA</td>
+            </tr>
+
+            <tr class="languages__row languages__row--mod">
+              <td class=" languages__cell">HTML</td>
+              <td class="languages__cell">Frontend</td>
+              <td class="languages__cell">Básico</td>
+              <td class="languages__cell">Estructura web</td>
+            </tr>
+
+            <tr class="languages__row languages__row--mod">
+              <td class=" languages__cell">CSS</td>
+              <td class="languages__cell">Frontend</td>
+              <td class="languages__cell">Básico</td>
+              <td class="languages__cell">Estilos web</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="backend-frontend">
+        <article class="backend-frontend__article">
+          <h2 class="backend-frontend__title">
+            Diferencia entre Backend y Frontend
+          </h2>
+
+          <div class="backend-frontend__content">
+
+            <!-- Frontend -->
+            <div class="backend-frontend__card backend-frontend__card--frontend">
+              <h3 class="backend-frontend__subtitle">Frontend</h3>
+
+              <div class="backend-frontend__text">
+                <p class="backend-frontend__paragraph">
+                  Es la parte de una página web o aplicación que
+                  <strong>los usuarios ven y con la que interactúan directamente.</strong>
+                </p>
+
+                <p class="backend-frontend__paragraph">
+                  <strong>Qué incluye:</strong> Todo lo visual: diseño, botones, menús, formularios, imágenes,
+                  animaciones.
+                </p>
+
+                <p class="backend-frontend__paragraph">
+                  <strong>Objetivo:</strong> Que la web sea
+                  <strong>atractiva, funcional y fácil de usar.</strong>
+                </p>
+              </div>
+            </div>
+
+            <!-- Backend -->
+            <div class="backend-frontend__card backend-frontend__card--backend">
+              <h3 class="backend-frontend__subtitle">Backend</h3>
+
+              <div class="backend-frontend__text">
+                <p class="backend-frontend__paragraph">
+                  Es la parte que <strong>funciona detrás de la web</strong> y que el usuario no ve, pero que hace que
+                  todo funcione correctamente.
+                </p>
+
+                <p class="backend-frontend__paragraph">
+                  <strong>Qué incluye:</strong> Bases de datos, servidores, lógica de la aplicación, autenticación de
+                  usuarios, envío de correos, gestión de información.
+                </p>
+
+                <p class="backend-frontend__paragraph">
+                  <strong>Objetivo:</strong> Que la web sea funcional, segura y capaz de manejar datos correctamente.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </article>
+      </section>
+
+
+    </main>
+
   </div>
-</section>
-</div>
-<footer class="footer">
-  <section class="footer__section">
+  <footer class="footer">
+    <section class="footer__section">
 
-    <article class="footer__article">
-      <h3 class="footer__title">Información del proyecto</h3>
-      <ul class="footer__list">
-        <li class="footer__item">Proyecto: Desarrollo de Aplicaciones Web</li>
-        <li class="footer__item">Asignatura: Diseño de interfaces web</li>
-        <li class="footer__item">Centro: IES Ribera del Tajo</li>
-        <li class="footer__item">Autora: Claudia Rodríguez Corrochano</li>
-      </ul>
-    </article>
+      <article class="footer__article">
+        <h3 class="footer__title">Información del proyecto</h3>
+        <ul class="footer__list">
+          <li class="footer__item">Proyecto: Desarrollo de Aplicaciones Web</li>
+          <li class="footer__item">Asignatura: Diseño de interfaces web</li>
+          <li class="footer__item">Centro: IES Ribera del Tajo</li>
+          <li class="footer__item">Autora: Claudia Rodríguez Corrochano</li>
+        </ul>
+      </article>
 
-    <article class="footer__article">
-      <h3 class="footer__title">Contenido del sitio</h3>
-      <ul class="footer__list">
-        <li class="footer__item">Formulario de inscripción</li>
-        <li class="footer__item">Inicio</li>
-        <li class="footer__item">Lenguajes</li>
-        <li class="footer__item">Cursos</li>
-      </ul>
-    </article>
+      <article class="footer__article">
+        <h3 class="footer__title">Contenido del sitio</h3>
+        <ul class="footer__list">
+          <li class="footer__item">Formulario de inscripción</li>
+          <li class="footer__item">Inicio</li>
+          <li class="footer__item">Lenguajes</li>
+          <li class="footer__item">Cursos</li>
+        </ul>
+      </article>
 
-    <article class="footer__article">
-      <h3 class="footer__title">Información legal</h3>
-      <ul class="footer__list">
-        <li class="footer__item">Aviso legal</li>
-        <li class="footer__item">Política de privacidad</li>
-        <li class="footer__item">Política de cookies</li>
-      </ul>
-    </article>
+      <article class="footer__article">
+        <h3 class="footer__title">Información legal</h3>
+        <ul class="footer__list">
+          <li class="footer__item">Aviso legal</li>
+          <li class="footer__item">Política de privacidad</li>
+          <li class="footer__item">Política de cookies</li>
+        </ul>
+      </article>
 
-  </section>
+    </section>
 
-  <div class="footer__bottom">
-    <p class="footer__copy">&copy; Proyecto educativo sin fines comerciales</p>
-  </div>
-</footer>
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; Proyecto educativo sin fines comerciales</p>
+    </div>
+  </footer>
 
-  
-    
- 
+
+
+
 
   <script src="../js/script.js"></script>
 </body>
