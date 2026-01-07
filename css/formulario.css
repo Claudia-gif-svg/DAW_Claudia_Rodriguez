@@ -78,23 +78,3 @@
   margin-left: 10px;
 }
 
-/* Botón de envío */
-.formulario-container__button {
-  width: 50%;
-  padding: 10px;
-  margin: 10px auto 20px auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--color-principal);
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-.formulario-container__button:hover {
-  background-color: var(--color-secundario);
-  color: var(--color-texto);
-}

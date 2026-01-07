@@ -1,16 +1,10 @@
 :root {
-    --color-principal: #C3AED6;
-    /* Lila pastel */
-    --color-secundario: #E2F0CB;
-    /* Verde menta pastel */
-    --color-terciario: #FFD6E0;
-    /* Rosa pastel */
-    --color-acento: #FFECB3;
-    /* Amarillo pastel */
-    --color-texto: #333333;
-    /* Texto oscuro */
-    --color-fondo: #F9F9F9;
-    /* Fondo general */
+    --color-principal: #C3AED6;/* Lila pastel */
+    --color-secundario: #E2F0CB;/* Verde menta pastel */
+    --color-terciario: #FFD6E0;/* Rosa pastel */
+    --color-acento: #FFECB3;/* Amarillo pastel */
+    --color-texto: #333333;/* Texto oscuro */
+    --color-fondo: #F9F9F9;/* Fondo general */
 }
 
 @media (min-width:600px) {
@@ -34,6 +28,10 @@
     .intro__img {
         width: 250px;
         display: flex;
+    }
+
+    .github-link {
+        margin-left: 20px;
     }
 
 }
@@ -149,6 +147,15 @@
         margin-left: 20px;
     }
 
+    .curso-lista {
+        margin-top: 20px;
+        gap: 1rem;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        margin-left: 70px;
+    }
+
 }
 
 @media (min-width:1200px) {
@@ -164,7 +171,4 @@
     .languages__row--mod {
         background-color: var(--color-secundario);
     }
-
-
-
 }
